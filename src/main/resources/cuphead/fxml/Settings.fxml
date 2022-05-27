@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.net.URL?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="cuphead.views.controllers.SettingsController"
+            prefHeight="720" prefWidth="1280">
+    <center>
+        <VBox spacing = "10" alignment="CENTER">
+            <Button text = "Choose Game Difficulty" prefHeight="50" prefWidth="150" onMouseClicked="#chooseGameDifficulty"/>
+            <Button text = "Mute/Unmute Sounds" prefHeight="50" prefWidth="150" onMouseClicked="#changeSoundMuteProperty"/>
+            <Button text = "Choose Game Color" prefHeight="50" prefWidth="150" onMouseClicked="#chooseGameColor"/>
+            <Button text = "back" onMouseClicked="#back"/>
+        </VBox>
+    </center>
+
+    <stylesheets>
+        <URL value="@../css/Game.css"/>
+    </stylesheets>
+
+</BorderPane>

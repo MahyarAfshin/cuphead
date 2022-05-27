@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.shape.Circle?>
+<?import java.net.URL?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="cuphead.views.controllers.ProfilePageController"
+            prefHeight="720" prefWidth="1280">
+
+    <center>
+        <VBox spacing="10" alignment="CENTER">
+            <Button text = "Current Avatar" prefHeight="50" prefWidth="150" onMouseClicked="#showCurrentAvatar"/>
+            <Button text = "Change Username" prefHeight="50" prefWidth="150" onMouseClicked="#changeUsername"/>
+            <Button text = "Change Password" prefHeight="50" prefWidth="150" onMouseClicked="#changePassword"/>
+            <Button text = "Logout" prefHeight="50" prefWidth="150" onMouseClicked="#logout"/>
+            <Button text = "Delete Account" prefHeight="50" prefWidth="150" onMouseClicked="#deleteAccount"/>
+            <Button text = "Back" onMouseClicked="#back"/>
+        </VBox>
+    </center>
+
+    <stylesheets>
+        <URL value="@../css/Game.css"/>
+    </stylesheets>
+
+</BorderPane>

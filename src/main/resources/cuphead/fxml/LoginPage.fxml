@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import java.net.URL?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="cuphead.views.controllers.LoginPageController"
+            prefHeight="720" prefWidth="1280">
+    <center>
+        <VBox spacing = "10" alignment="CENTER">
+            <Text styleClass="title" text = "Cuphead"/>
+            <Text text = "username:"/>
+            <TextField fx:id="username" promptText="enter your username here" maxWidth="300" maxHeight="50"/>
+            <VBox fx:id="usernameError" alignment="CENTER"/>
+            <Text text = "password:"/>
+            <TextField fx:id="password" promptText="enter your password here" maxWidth="300" maxHeight="50"/>
+            <VBox fx:id="passwordError" alignment="CENTER"/>
+            <Button text = "Login" onMouseClicked="#login"/>
+            <Button text = "Register" onMouseClicked="#register"/>
+            <Button text = "Enter as guest" onMouseClicked="#registerAsGuest"/>
+        </VBox>
+    </center>
+
+    <stylesheets>
+        <URL value="@../css/LoginPage.css"/>
+        <URL value="@../css/Game.css"/>
+    </stylesheets>
+
+</BorderPane>
